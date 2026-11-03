@@ -39,7 +39,6 @@
         }
     </script>
     <style>
-        /* Blindagem rigorosa contra estouro horizontal no mobile */
         html, body {
             max-width: 100%;
             overflow-x: hidden !important;
@@ -78,7 +77,6 @@
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* Posicionamento fixo estável e sem distorção */
         .fixed-header-safe {
             position: fixed !important;
             top: 0 !important;
@@ -113,9 +111,10 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
                     <img src="imagem/logo01.png" alt="Logo Bettio Vet & Pet" class="h-10 w-auto">
-                    <div class="flex flex-col leading-none">
+                    <!-- Centralizado e aproximado com margem negativa controlada -->
+                    <div class="flex flex-col items-center leading-none -space-y-1">
                         <span class="font-heading font-bold text-2xl text-brand-dark tracking-tight uppercase">BETTIO</span>
-                        <span class="text-brand-teal text-sm font-heading font-bold tracking-wide">Vet & Pet</span>
+                        <span class="text-brand-teal text-xs font-heading font-bold tracking-wide">Vet & Pet</span>
                     </div>
                 </div>
                 
@@ -455,9 +454,9 @@
             <div data-aos="fade-up" data-aos-delay="100">
                 <div class="flex items-center gap-3 mb-6">
                     <img src="imagem/logo01.png" alt="Logo Bettio Vet & Pet" class="h-8 w-auto brightness-0 invert">
-                    <div class="flex flex-col leading-none">
+                    <div class="flex flex-col items-center leading-none -space-y-1">
                         <span class="font-heading font-bold text-2xl text-white tracking-tight uppercase">BETTIO</span>
-                        <span class="text-brand-teal text-sm font-heading font-bold tracking-wide">Vet & Pet</span>
+                        <span class="text-brand-teal text-xs font-heading font-bold tracking-wide">Vet & Pet</span>
                     </div>
                 </div>
                 <p class="text-slate-400 mb-6">A saúde do seu pet tratada com a excelência e o respeito que a sua família merece.</p>
